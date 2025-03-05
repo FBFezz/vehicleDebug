@@ -250,12 +250,7 @@ RegisterNUICallback("resetStats", function(data, cb)
 end)
 
 --[[ Commands ]]--
-RegisterCommand("+vehicleDebug", function()
-	if Debugger.toggleOn == false then return end
-	Debugger:Focus(not Debugger.hasFocus)
-end, true)
-
-RegisterKeyMapping("+vehicleDebug", "Vehicle Debugger", "keyboard", "lmenu")
+RegisterKeyMapping("vehdebug", "Vehicle Debug", "keyboard", "lmenu")
 
 RegisterCommand("vehdebug", function()
 	Debugger:ToggleOn(not Debugger.toggleOn)
